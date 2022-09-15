@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+/* NAVIGATION BEGINS */
+nav {
+    width: 290px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.logo-heading  {
+    color: red;
+}
+
+.logo-heading2 {
+    color: blue;
+}
+
+nav ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(17, 16, 16, 0.95);
+    color: white;
+    top: 0;
+    width: 340px;
+    height: 60vh;
+    z-index: 200;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+
+.reveal {
+    transform: translateY(0%);
+}
+
+nav ul li {
+    margin: 20px;
+    transition: 0.5s;
+}
+
+nav ul li a.active {
+    padding: 10px 60px;
+    background-color: blue;
+    color: white;
+}
+
+nav ul li a {
+    width: 150px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 52px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background-color: blue
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 0.7s;
+}
+
+.menu .active {
+    border: 2px solid blue;
+}
+
+.menu .active:hover {
+    background-color: blue;
+}
+
+/* NAVIGATION ENDS */
+
+/* MAIN BODY BEGINS */
+.main-header {
+    width: 400px;
+    background-color: black;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.biography {
+    margin: 10px;
+}
+
+.biography a {
+    color: white;
+    font-weight: 500;
+}
+
+.gallery a {
+    color: white;
+    font-weight: 500;
+}
+
+.short-biography-image {
+    min-width: 100%;
+}
+
+.short-biography-text {
+    font-weight: 450;
+    margin: 20px;
+    line-height: 2;
+}
+
+.short-biography-image2 {
+    min-width: 100%;
+}
+
+.charity-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/IMAGES/function1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+}
+
+.two {
+    border: 2px solid white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/IMAGES/function3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor-heading {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.sponsor-image {
+    opacity: 0.4;
+}
+/* MAIN BODY ENDS */
+
+
+
+/* FOOTER BEGINS */
+.footer {
+    background: grey;
+    width: 400px;
+    color: white;
+    padding: 10px;
+}
+
+.footer-text {
+    font-size: 17px;
+    margin: 7px;
+}
+/* FOOTER ENDS */
